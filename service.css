@@ -1,0 +1,154 @@
+.sticky-top {
+    top: -100px;
+    transition: .5s;
+}
+
+.navbar .navbar-nav .nav-link {
+    margin-right: 35px;
+    padding: 25px 0;
+    color: var(--dark);
+    font-size: 18px;
+    font-weight: 500;
+    outline: none;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+    color: var(--primary);
+}
+
+.navbar .dropdown-toggle::after {
+    border: none;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+@media (max-width: 991.98px) {
+    .navbar .navbar-nav .nav-link  {
+        margin-right: 0;
+        padding: 10px 0;
+    }
+
+    .navbar .navbar-nav {
+        margin-top: 15px;
+        border-top: 1px solid #EEEEEE;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        border: none;
+        margin-top: 0;
+        top: 150%;
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        top: 100%;
+        visibility: visible;
+        transition: .5s;
+        opacity: 1;
+    }
+}
+
+/* main-container */
+
+.main-container{
+
+    margin: 25px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.services{
+/* border: 1px solid black; */
+height: 81vh;
+margin-top: 25px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+.content-part{
+    display: flex;
+    flex-direction: column;
+    width: 72vw;
+    height: 10vh;
+}
+
+.img-side{
+    margin: 25px;
+    width: 20vw;
+    height: 45vh;
+
+}
+
+.res-p{
+    font-size: 15px;
+}
+
+.img-side{
+    margin: 225px 25px;
+    width: 20vw;
+    height: 25vh;
+    box-shadow: 0px 5px 10px 0px rgba( 137, 138, 142, 1);
+    border-radius: 15px;
+}
+
+.img{
+    margin: 35px 95px;
+    width: 110px;
+    height: 110px;
+}
+
+@media (min-width: 250px) and (max-width: 1270px){
+
+    .services{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    }
+
+    .img-side{
+        height: 150px;
+        width: 200px;
+        margin: 20px 0px;
+        box-shadow: 0px 5px 10px 0px rgba( 217, 219, 230, 1);
+        border-radius: 15px;
+    }
+    .res-h1{
+        font-size: 20px;
+    }
+
+    .res-p{
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .content-part{
+        height: auto;
+        /* border: 1px solid black; */
+        width: 90vw;
+    }
+
+    .main-container{
+        width: 97vw;
+        margin: 5px;
+    }
+
+    .img{
+        margin: 30px 50px;
+        width: 100px;
+        height: 100px;
+    }
+}
