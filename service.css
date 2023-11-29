@@ -109,7 +109,7 @@ flex-wrap: wrap;
     height: 110px;
 }
 
-@media (min-width: 250px) and (max-width: 1270px){
+@media (min-width: 250px) and (max-width: 1395px){
 
     .services{
     display: flex;
